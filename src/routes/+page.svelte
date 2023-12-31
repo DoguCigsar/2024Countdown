@@ -5,7 +5,7 @@
  
     // Base64 decode with error checking
     let audio;
-    let splitSlug = ['2024-01-01T00:00:00.000Z',"New Year 2024!"];
+    let splitSlug = ['2023-12-31T21:00:00.000Z',"New Year 2024!"];
     let remTime;
     
     function countdown(date){
@@ -28,7 +28,7 @@
         m = (m < 10) ? "0" + m : m;
         s = (s < 10) ? "0" + s : s;
 
-        return `${d} day[s], ${h-3} hour[s], ${m} minute[s], ${s} second[s]`;
+        return `${d} day[s], ${h} hour[s], ${m} minute[s], ${s} second[s]`;
     }
     let countdownLeft = countdown(splitSlug[0]);
     function counter(){
